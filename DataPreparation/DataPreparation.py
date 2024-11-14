@@ -75,8 +75,8 @@ class ProteinAnnotator:
         
         print("".join(colored_seq))
 
-# Example usage:
-annotator = ProteinAnnotator()
-annotated_sequence = annotator.get_annotated_sequence('1FAT')
-print(annotated_sequence)
-annotator.print_sequence(*annotated_sequence)
+if __name__=='main':
+    annotator = ProteinAnnotator()
+    annotated_sequence = annotator.get_annotated_sequence('1FAT')
+    print(annotated_sequence)
+    annotator.print_sequence(*annotated_sequence)
